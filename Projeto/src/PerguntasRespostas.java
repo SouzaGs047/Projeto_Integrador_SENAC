@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -7,6 +6,7 @@ public class PerguntasRespostas {
     ArrayList<String> perguntas = new ArrayList<>();
     ArrayList<ArrayList<String>> respostas = new ArrayList<>();
     ArrayList<String> respostaCerta = new ArrayList<>();
+
     public PerguntasRespostas() {
         // Adicionando perguntas
         perguntas.add("Qual é a capital da França?");
@@ -56,8 +56,9 @@ public class PerguntasRespostas {
         int pontos = 0;
 
         for (int i = 0; i < perguntas.size(); i++) {
-            System.out.println("Pergunta: " + perguntas.get(i));
-            System.out.println("Respostas:");
+            var numeroPergunta = i+1;
+            System.out.println(numeroPergunta + ") " + perguntas.get(i));
+            System.out.println();
 
             ArrayList<String> listaRespostas = respostas.get(i);
             char letra = 'A';
@@ -66,7 +67,7 @@ public class PerguntasRespostas {
                 System.out.println(letra + ") " + resposta);
                 letra++;
             }
-
+            System.out.print("\n>> ");
             String respostaUsuario = input.nextLine();
             System.out.println();
 
@@ -74,10 +75,22 @@ public class PerguntasRespostas {
                 pontos++;
             }
         }
-        System.out.println("Sua pontuação foi: " + pontos);
+        if(pontos == 10){
+            System.out.println("Impressionante, você acertou todas as perguntas.");
+            System.out.println("Você acertou: " + pontos + " questoões");
+
+        }else if(pontos == 9){
+            System.out.println("Parabéns pelo seu desempenho, faltou pouco");
+            System.out.println("Você acertou: " + pontos + " questoões");
+        }else if(pontos < 9){
+            System.out.println("Ótimo desempenho");
+            System.out.println("Você acertou: " + pontos + " questoões");
+        }else if(pontos < 6){
+            System.out.println("Parabéns por concluir o Quiz");
+            System.out.println("Você acertou: " + pontos + " questoões");
+        }
 
         input.nextLine();
         Menu.limpar();
     }
-
 }

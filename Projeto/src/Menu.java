@@ -2,19 +2,21 @@ import java.util.Scanner;
 
 public class Menu {
     public static void inicial() {
-        
+        limpar();
         System.out.println("""
-                +---------------+
-                | 1. INSTRUÇÕES |
-                +---------------+
-                | 2. CRÉDITOS   |
-                +---------------+
-                | 3. JOGAR      |
-                +---------------+
-                | 4. SAIR       |
-                +---------------+
+            +------------------------+
+            |         FUTIZ          |
+            +------------------------+
+                +----------------+    
+                | 1. INSTRUÇÕES  |
+                +----------------+
+                | 2. CRÉDITOS    |
+                +----------------+
+                | 3. JOGAR       |
+                +----------------+
+                | 4. SAIR        |
+                +----------------+
                         """);
-
     }
 
     public static void instrucoes() {
@@ -34,14 +36,13 @@ public class Menu {
         System.out.println("Enter para voltar ao menu");
         Scanner input = new Scanner(System.in);
         input.nextLine();
-
     }
 
     public static void creditos() {
         limpar();
         System.out.println("""
                 Integrantes:
-                                
+
                  * Guilherme dos Santos Soares
                  * Gustavo Souza Santana
                  * Otávio Augusto Silva Pereira
@@ -50,7 +51,6 @@ public class Menu {
         System.out.println("Enter para voltar ao menu");
         Scanner input = new Scanner(System.in);
         input.nextLine();
-
     }
 
     public static void limpar() {
@@ -83,8 +83,13 @@ public class Menu {
                 break;
             default:
                 System.out.println("Digite uma opção válida!");
+                try {
+                    // Pausa a execução por 5 segundos (5000 milissegundos)
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                input.nextLine();
         }
-
     }
 }
-
