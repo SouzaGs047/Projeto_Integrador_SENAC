@@ -9,44 +9,114 @@ public class PerguntasRespostas {
 
     public PerguntasRespostas() {
         // Adicionando perguntas
-        perguntas.add("Qual é a capital da França?");
-        perguntas.add("Qual é o maior oceano do mundo?");
-        perguntas.add("Quem pintou a Mona Lisa?");
+        perguntas.add("Qual é o nome do esporte em que os jogadores usam os pés para chutar uma bola?");
+        perguntas.add("Quantos jogadores compõem uma equipe de futebol em campo?");
+        perguntas.add("Quantos tempos regulamentares existem em uma partida de futebol??");
+        perguntas.add("Quanto tempo dura cada tempo regulamentar em uma partida de futebol?");
+        perguntas.add("Quem é o artilheiro de todos os tempos da seleção brasileira de futebol?");
+        perguntas.add("Qual é o nome dado ao jogador que atua na última linha de defesa, próximo ao gol?");
+        perguntas.add("Em qual país foi realizada a Copa do Mundo de 2018");
+        perguntas.add("Qual é o nome do principal torneio de seleções nacionais do futebol?");
+        perguntas.add("Qual é o nome do troféu concedido ao vencedor da Copa do Mundo?");
+        perguntas.add("Em que ano a seleção brasileira de futebol masculino conquistou sua última medalha de ouro olímpica?");
 
         // Adicionando respostas para a primeira pergunta
         ArrayList<String> respostasPergunta1 = new ArrayList<>();
-        respostasPergunta1.add("Paris");
-        respostasPergunta1.add("Londres");
-        respostasPergunta1.add("Roma");
-        respostasPergunta1.add("Berlim");
+        respostasPergunta1.add("Futebol");
+        respostasPergunta1.add("Basquete");
+        respostasPergunta1.add("Tênis");
+        respostasPergunta1.add("Golfe");
 
         // Adicionando respostas para a segunda pergunta
         ArrayList<String> respostasPergunta2 = new ArrayList<>();
-        respostasPergunta2.add("Oceano Atlântico");
-        respostasPergunta2.add("Oceano Índico");
-        respostasPergunta2.add("Oceano Pacífico");
-        respostasPergunta2.add("Oceano Ártico");
+        respostasPergunta2.add("10 jogadores");
+        respostasPergunta2.add("11 jogadores");
+        respostasPergunta2.add("12 jogadores");
+        respostasPergunta2.add("9 jogadores");
 
         // Adicionando respostas para a terceira pergunta
         ArrayList<String> respostasPergunta3 = new ArrayList<>();
-        respostasPergunta3.add("Leonardo da Vinci");
-        respostasPergunta3.add("Pablo Picasso");
-        respostasPergunta3.add("Vincent van Gogh");
-        respostasPergunta3.add("Michelangelo");
+        respostasPergunta3.add("1 tempo");
+        respostasPergunta3.add("2 tempo");
+        respostasPergunta3.add("3 tempo");
+        respostasPergunta3.add("4 tempo");
+
+        // Adicionando respostas para a quarta pergunta
+        ArrayList<String> respostasPergunta4 = new ArrayList<>();
+        respostasPergunta3.add("30 minutos");
+        respostasPergunta3.add("45 minutos");
+        respostasPergunta3.add("60 minutos");
+        respostasPergunta3.add("90 minutos");
+
+        // Adicionando respostas para a quinta pergunta
+        ArrayList<String> respostasPergunta5 = new ArrayList<>();
+        respostasPergunta3.add("Romário");
+        respostasPergunta3.add("Ronaldo");
+        respostasPergunta3.add("Pelé");
+        respostasPergunta3.add("Neymar");
+
+        // Adicionando respostas para a sexta pergunta
+        ArrayList<String> respostasPergunta6 = new ArrayList<>();
+        respostasPergunta3.add("Goleiro");
+        respostasPergunta3.add("Zagueiro");
+        respostasPergunta3.add("Lateral");
+        respostasPergunta3.add("Atacante");
+
+        // Adicionando respostas para a setima pergunta
+        ArrayList<String> respostasPergunta7 = new ArrayList<>();
+        respostasPergunta3.add("Brasil");
+        respostasPergunta3.add("Alemanha");
+        respostasPergunta3.add("Rússia");
+        respostasPergunta3.add("França");
+
+        // Adicionando respostas para a oitava pergunta
+        ArrayList<String> respostasPergunta8 = new ArrayList<>();
+        respostasPergunta3.add("Copa do Mundo");
+        respostasPergunta3.add("Liga dos Campeões");
+        respostasPergunta3.add("Copa América");
+        respostasPergunta3.add("Atacante");
+
+        // Adicionando respostas para a nona pergunta
+        ArrayList<String> respostasPergunta9 = new ArrayList<>();
+        respostasPergunta3.add("Taça do Mundo");
+        respostasPergunta3.add("Taça das Nações");
+        respostasPergunta3.add("Taça da FIFA");
+        respostasPergunta3.add("Taça Jules Rimet");
+
+        // Adicionando respostas para a décima pergunta
+        ArrayList<String> respostasPergunta10 = new ArrayList<>();
+        respostasPergunta3.add("2004");
+        respostasPergunta3.add("2008");
+        respostasPergunta3.add("2012");
+        respostasPergunta3.add("2016");
 
         // Adicionando as listas de respostas à lista de respostas
         respostas.add(respostasPergunta1);
         respostas.add(respostasPergunta2);
         respostas.add(respostasPergunta3);
+        respostas.add(respostasPergunta4);
+        respostas.add(respostasPergunta5);
+        respostas.add(respostasPergunta6);
+        respostas.add(respostasPergunta7);
+        respostas.add(respostasPergunta8);
+        respostas.add(respostasPergunta9);
+        respostas.add(respostasPergunta10);
 
         // Embaralhando as respostas
         for (ArrayList<String> listaRespostas : respostas) {
             Collections.shuffle(listaRespostas);
         }
 
-        respostaCerta.add("Paris");
-        respostaCerta.add("Oceano Pacífico");
-        respostaCerta.add("Leonardo da Vinci");
+        respostaCerta.add("Futebol");
+        respostaCerta.add("11 jogadores");
+        respostaCerta.add("2 tempos");
+        respostaCerta.add("45 minutos");
+        respostaCerta.add("Pelé");
+        respostaCerta.add("Goleiro");
+        respostaCerta.add("Rússia");
+        respostaCerta.add("Copa do Mundo");
+        respostaCerta.add("Taça da FIFA");
+        respostaCerta.add("2016");
     }
 
     public void jogar() {
