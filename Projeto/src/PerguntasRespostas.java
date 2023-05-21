@@ -37,9 +37,9 @@ public class PerguntasRespostas {
         // Adicionando respostas para a terceira pergunta
         ArrayList<String> respostasPergunta3 = new ArrayList<>();
         respostasPergunta3.add("1 tempo");
-        respostasPergunta3.add("2 tempo");
-        respostasPergunta3.add("3 tempo");
-        respostasPergunta3.add("4 tempo");
+        respostasPergunta3.add("2 tempos");
+        respostasPergunta3.add("3 tempos");
+        respostasPergunta3.add("4 tempos");
 
         // Adicionando respostas para a quarta pergunta
         ArrayList<String> respostasPergunta4 = new ArrayList<>();
