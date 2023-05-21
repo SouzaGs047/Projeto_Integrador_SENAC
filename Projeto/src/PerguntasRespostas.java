@@ -43,52 +43,52 @@ public class PerguntasRespostas {
 
         // Adicionando respostas para a quarta pergunta
         ArrayList<String> respostasPergunta4 = new ArrayList<>();
-        respostasPergunta3.add("30 minutos");
-        respostasPergunta3.add("45 minutos");
-        respostasPergunta3.add("60 minutos");
-        respostasPergunta3.add("90 minutos");
+        respostasPergunta4.add("30 minutos");
+        respostasPergunta4.add("45 minutos");
+        respostasPergunta4.add("60 minutos");
+        respostasPergunta4.add("90 minutos");
 
         // Adicionando respostas para a quinta pergunta
         ArrayList<String> respostasPergunta5 = new ArrayList<>();
-        respostasPergunta3.add("Romário");
-        respostasPergunta3.add("Ronaldo");
-        respostasPergunta3.add("Pelé");
-        respostasPergunta3.add("Neymar");
+        respostasPergunta5.add("Romário");
+        respostasPergunta5.add("Ronaldo");
+        respostasPergunta5.add("Pelé");
+        respostasPergunta5.add("Neymar");
 
         // Adicionando respostas para a sexta pergunta
         ArrayList<String> respostasPergunta6 = new ArrayList<>();
-        respostasPergunta3.add("Goleiro");
-        respostasPergunta3.add("Zagueiro");
-        respostasPergunta3.add("Lateral");
-        respostasPergunta3.add("Atacante");
+        respostasPergunta6.add("Goleiro");
+        respostasPergunta6.add("Zagueiro");
+        respostasPergunta6.add("Lateral");
+        respostasPergunta6.add("Atacante");
 
         // Adicionando respostas para a setima pergunta
         ArrayList<String> respostasPergunta7 = new ArrayList<>();
-        respostasPergunta3.add("Brasil");
-        respostasPergunta3.add("Alemanha");
-        respostasPergunta3.add("Rússia");
-        respostasPergunta3.add("França");
+        respostasPergunta7.add("Brasil");
+        respostasPergunta7.add("Alemanha");
+        respostasPergunta7.add("Rússia");
+        respostasPergunta7.add("França");
 
         // Adicionando respostas para a oitava pergunta
         ArrayList<String> respostasPergunta8 = new ArrayList<>();
-        respostasPergunta3.add("Copa do Mundo");
-        respostasPergunta3.add("Liga dos Campeões");
-        respostasPergunta3.add("Copa América");
-        respostasPergunta3.add("Atacante");
+        respostasPergunta8.add("Copa do Mundo");
+        respostasPergunta8.add("Liga dos Campeões");
+        respostasPergunta8.add("Copa América");
+        respostasPergunta8.add("Atacante");
 
         // Adicionando respostas para a nona pergunta
         ArrayList<String> respostasPergunta9 = new ArrayList<>();
-        respostasPergunta3.add("Taça do Mundo");
-        respostasPergunta3.add("Taça das Nações");
-        respostasPergunta3.add("Taça da FIFA");
-        respostasPergunta3.add("Taça Jules Rimet");
+        respostasPergunta9.add("Taça do Mundo");
+        respostasPergunta9.add("Taça das Nações");
+        respostasPergunta9.add("Taça da FIFA");
+        respostasPergunta9.add("Taça Jules Rimet");
 
         // Adicionando respostas para a décima pergunta
         ArrayList<String> respostasPergunta10 = new ArrayList<>();
-        respostasPergunta3.add("2004");
-        respostasPergunta3.add("2008");
-        respostasPergunta3.add("2012");
-        respostasPergunta3.add("2016");
+        respostasPergunta10.add("2004");
+        respostasPergunta10.add("2008");
+        respostasPergunta10.add("2012");
+        respostasPergunta10.add("2016");
 
         // Adicionando as listas de respostas à lista de respostas
         respostas.add(respostasPergunta1);
