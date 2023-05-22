@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Menu {
+
+    //Menu do quiz
     public static void inicial() {
         limpar();
         System.out.println("""
@@ -19,17 +21,15 @@ public class Menu {
                         """);
     }
 
+    //Menu para as instruções para o jogo
     public static void instrucoes() {
         limpar();
         System.out.println("""
-                Este é um jogo de alternativas, então você irá utilizar:
-                                A
-                                B
-                                C
-                                D
-                Para responder as questões, este é um jogo de pontos acumulativos.
+                Este é um jogo de alternativas, onde você deve digitar a alternativa correta.
+                Este é um jogo de pontos acumulativos.
                 Você não perde pontos ao errar questões, então fique tranquilo.
                 Ao final do quiz sua pontuação será exibida em sua tela, fique ligado!
+
                 Preparado??
                                 """);
 
@@ -38,6 +38,7 @@ public class Menu {
         input.nextLine();
     }
 
+    //Menu de creditos
     public static void creditos() {
         limpar();
         System.out.println("""
@@ -53,11 +54,13 @@ public class Menu {
         input.nextLine();
     }
 
+    //Comando para limpar o terminal e não poluir
     public static void limpar() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
 
+    //Switch case onde coloca o menu inicial e outras funções para funcionar
     public static void swCase() {
         Scanner input = new Scanner(System.in);
         int opcaoMenu = input.nextInt();
